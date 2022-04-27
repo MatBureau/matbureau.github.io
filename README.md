@@ -1,3 +1,3 @@
 # Repo CV Mathis Bureau HTML
 
-Lien du site accessible: https://matbureau.github.io/CVMathisBureau.github.io/
+Lien du site accessible: matbureau.github.io
