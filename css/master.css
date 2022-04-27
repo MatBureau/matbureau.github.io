@@ -70,3 +70,9 @@ html{
   .section{
     margin-bottom: 1.5rem;
   }
+
+  .infos{
+    columns: 2;
+    list-style-type: none;
+    padding: 0;
+  }
