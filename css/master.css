@@ -53,7 +53,7 @@ html{
   }
 
   .portait{
-    border-radius: 50%;
+    border-radius: 30%;
     max-width: 150px;
     margin: auto;
     display: block;
