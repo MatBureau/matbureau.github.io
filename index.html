@@ -1,109 +1,283 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
-   <title>Curriculum Vitae</title>
-   <link rel="stylesheet" type="text/css" href="css/master.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap" rel="stylesheet">
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mathis Bureau — Développeur .NET | CV & Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script>
+    const profileData = {
+      name: "Mathis Bureau",
+      title: "Développeur C# / .NET | Web & Logiciels",
+      location: "Saint-Priest-En-Jarez, FR",
+      email: "mathisbureau@gmail.com",
+      phone: "+33 7 81 53 52 31",
+      links: {
+        github: "https://github.com/MatBureau",
+        linkedin: "https://www.linkedin.com/in/mathis-bureau",
+        resumePdf: "./Mathis_Bureau_CV.pdf"
+      },
+      about: "Développeur polyvalent passionné par la conception d’applications performantes et robustes. Expérience en C#/.NET, développement web full-stack, et intégration de solutions avancées telles que le RAG (Retrieval-Augmented Generation).",
+      languages: [
+        { name: "Français", level: "Professionnel (Projet Voltaire)" },
+        { name: "Anglais", level: "C1 (TOEIC 965)" },
+        { name: "Espagnol", level: "Notions" }
+      ],
+      interests: ["Jeux vidéo", "Musique", "Lecture", "Sport", "Informatique"],
+      skills: {
+        backend: ["C#", ".NET Framework", "ASP.NET", "WPF", "Entity Framework", "Microsoft SQL Server", "SQL"],
+        web: ["HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Bootstrap", "TailwindCSS", "PHP", "MySQL", "PostgreSQL"],
+        devops: ["Linux", "Serveur Linux", "GitHub", "LangChain", "RAG"],
+        other: ["Python", "PhpMyAdmin"]
+      },
+      experiences: [
+        {
+          company: "MYRIADEV SAS",
+          role: "Développeur web (Alternance)",
+          start: "2023-09",
+          end: "Aujourd'hui",
+          location: "Saint-Étienne et périphérie, France",
+          achievements: [
+            "Développement et maintenance d’applications web avec Angular et .NET",
+            "Implémentation de systèmes RAG et intégration LangChain",
+            "Optimisation de bases de données PostgreSQL et SQL Server"
+          ],
+          tech: ["TypeScript", "Angular", "C#", ".NET", "LangChain", "PostgreSQL", "RAG", "HTML", "CSS"]
+        },
+        {
+          company: "Objectif PDA",
+          role: "Développeur dotnet (Alternance)",
+          start: "2021-09",
+          end: "2023-08",
+          location: "Rive-de-Gier, Auvergne-Rhône-Alpes, France",
+          achievements: [
+            "Développement front-end (WPF) et back-end (.NET)",
+            "Création d’interfaces entre l’application et des systèmes externes (SOAP, XML, CSV)"
+          ],
+          tech: [".NET Framework", "WPF", "SQL Server"]
+        }
+      ],
+      education: [
+        { school: "Pôle Formation CFAI AFPI Loire-Drôme-Ardèche", program: "BAC +5 E2I, Expert en ingénierie informatique et cybersécurité", start: "2024-11", end: "2026-10" },
+        { school: "Pôle Formation CFAI AFPI Loire-Drôme-Ardèche", program: "Licence CPLR, Informatique — Chef de projet informatique", start: "2023-09", end: "2024-10" },
+        { school: "CFAI Ardèche-Loire (Saint-Étienne)", program: "BTS SIO (Services Informatiques aux Organisations)", start: "2021", end: "2023" }
+      ],
+      projects: [
+        {
+          title: "Système RAG en Python avec LangChain",
+          description: "Conception et développement d'un système de recherche augmentée (Retrieval-Augmented Generation) avec LangChain, PostgreSQL (PGVector) et FastAPI, intégrant mémoire conversationnelle et optimisations de requêtes."
+        },
+        {
+          title: "Modules Angular / C# pour LogeProj",
+          description: "Développement de modules front-end en TypeScript (Angular) et intégration avec un back-end C#/.NET pour une application métier de gestion documentaire et RAG."
+        },
+        {
+          title: "Back-end d'une solution Drive (Projet de cours)",
+          description: "Implémentation d'une API REST sécurisée pour un service de stockage et partage de fichiers, avec gestion des droits, chiffrement et intégration à un client web."
+        }
+      ]
+    };
+  </script>
 </head>
-<body>
-   <div class="cv-container">
-      <div class="left-column">
-         <img class="portait" alt="photo_profile" title="photo" src="costume.png"/>
-         <p>
-            <i class="icon fab fa-linkedin text-darkblue"></i> <href="https://www.linkedin.com/in/mathis-bureau/">mathis-bureau</href>
-         </p>
-         <div class="section">
-            <h2>À PROPOS</h2>
-            <p>
-              Débrouillard et indépendant dans mon travail, j’aime apprendre de nouvelles technologies et passer du temps à résoudre des problèmes. Mes valeurs de travail : flexibilité, performance et sérieux.
-            </p>
-          </div>
-         <div class="section">
-            <h2>Compétences</h2>
-            <ul class="skills">
-                <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>PHP</strong></li>
-                <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>.Net Framework</strong></li>
-                <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>C# et WPF</strong></li>
-                <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>SQL Server</strong></li>
-                <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Github</strong></li>
-               <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Linux</strong></li>
-               <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Bases en unity 2D</strong></li>
-                <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>BootStrap</strong></li>
+<body x-data="ui()" x-init="render()" class="bg-white text-slate-800 antialiased dark:bg-slate-900 dark:text-slate-100">
+  <!-- Barre supérieure -->
+  <header class="sticky top-0 z-40 backdrop-blur border-b border-slate-200/60 dark:border-slate-700/60 bg-white/70 dark:bg-slate-900/50">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="font-semibold tracking-tight">Mathis Bureau</a>
+      <nav class="hidden md:flex gap-6 text-sm opacity-80">
+        <a href="#about" class="hover:opacity-100">À propos</a>
+        <a href="#skills" class="hover:opacity-100">Compétences</a>
+        <a href="#experience" class="hover:opacity-100">Expériences</a>
+        <a href="#education" class="hover:opacity-100">Formation</a>
+        <a href="#projects" class="hover:opacity-100">Projets</a>
+        <a href="#contact" class="hover:opacity-100">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a class="no-print inline-flex items-center rounded-xl border px-3 py-1.5 text-sm hover:shadow-sm hover:-translate-y-0.5 transition" x-bind:href="data.links.resumePdf" target="_blank" rel="noopener">CV PDF</a>
+        <button class="inline-flex items-center rounded-xl border px-3 py-1.5 text-sm hover:shadow-sm hover:-translate-y-0.5 transition" @click="toggleTheme" aria-label="Basculer le thème">☀️/🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative">
+    <div class="mx-auto max-w-6xl px-4 pt-14 pb-10 md:pt-20 md:pb-16 grid md:grid-cols-[1.1fr,1fr] items-center gap-10">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-[1.15]">
+          <span x-text="data.name"></span>
+        </h1>
+        <p class="mt-3 text-lg md:text-xl opacity-80" x-text="data.title"></p>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <a x-bind:href="'mailto:'+data.email" class="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-sm hover:shadow-sm">✉️ <span x-text="data.email"></span></a>
+          <a x-bind:href="data.links.linkedin" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-sm hover:shadow-sm">in LinkedIn</a>
+          <a x-bind:href="data.links.github" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-sm hover:shadow-sm">󰊤 GitHub</a>
+          <span class="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-sm">📍 <span x-text="data.location"></span></span>
+          <span class="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-sm">📱 <span x-text="data.phone"></span></span>
+        </div>
+      </div>
+      <div class="justify-self-center md:justify-self-end">
+        <div class="relative w-40 h-40 md:w-56 md:h-56 rounded-2xl ring-2 ring-sky-500/40 overflow-hidden shadow-xl">
+          <img src="./costume.png" alt="Photo de profil" class="w-full h-full object-cover"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section id="about" class="py-10 md:py-14 border-t border-slate-200/60 dark:border-slate-700/60">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-[1fr,2fr] gap-8">
+      <h2 class="text-xl md:text-2xl font-bold">À propos</h2>
+      <p class="leading-relaxed opacity-90" x-text="data.about"></p>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="skills" class="py-10 md:py-14 border-t border-slate-200/60 dark:border-slate-700/60">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-xl md:text-2xl font-bold mb-6">Compétences</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div>
+          <h3 class="font-semibold mb-2 opacity-80">Back-end</h3>
+          <div class="flex flex-wrap gap-2" x-html="chips(data.skills.backend)"></div>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2 opacity-80">Web</h3>
+          <div class="flex flex-wrap gap-2" x-html="chips(data.skills.web)"></div>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2 opacity-80">DevOps & Autres</h3>
+          <div class="flex flex-wrap gap-2" x-html="chips([...data.skills.devops, ...data.skills.other])"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expériences -->
+  <section id="experience" class="py-10 md:py-14 border-t border-slate-200/60 dark:border-slate-700/60">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-xl md:text-2xl font-bold mb-6">Expériences professionnelles</h2>
+      <ol class="relative border-s border-slate-200 dark:border-slate-700">
+        <template x-for="exp in data.experiences" :key="exp.company + exp.start">
+          <li class="ms-6 py-6">
+            <span class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-sky-500 text-white text-xs">★</span>
+            <div class="flex flex-wrap items-baseline gap-3">
+              <h3 class="font-semibold" x-text="exp.role"></h3>
+              <span class="opacity-70" x-text="'— ' + exp.company"></span>
+              <span class="ms-auto text-sm opacity-70" x-text="formatDateRange(exp.start, exp.end)"></span>
+            </div>
+            <div class="mt-2 text-sm opacity-80" x-text="exp.location"></div>
+            <ul class="mt-3 list-disc ps-5 space-y-1" x-show="exp.achievements?.length">
+              <template x-for="a in exp.achievements" :key="a">
+                <li x-text="a"></li>
+              </template>
             </ul>
-        </div>
-         <div class="section">
-            <h2>Langues</h2>
-            <p>
-                Français, niveau professionnel projet Voltaire
-                <br>
-                Anglais, compétence professionnelle (score 965 TOEIC, niveau C1)
-                <br>
-                Espagnol, quelques bases
-            </p>
-        </div>
-        <div class="section">
-            <h2>Centres d'intérêt</h2>
-            <p>
-                Jeux vidéo
-                <br>
-                Musique
-                <br>
-                Lecture
-                <br>
-                Sport
-                <br>
-                Informatique en général
-            </p>
-        </div>
+            <div class="mt-3 flex flex-wrap gap-2" x-html="chips(exp.tech)"></div>
+          </li>
+        </template>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Formation -->
+  <section id="education" class="py-10 md:py-14 border-t border-slate-200/60 dark:border-slate-700/60">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-xl md:text-2xl font-bold mb-6">Parcours scolaire</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <template x-for="e in data.education" :key="e.school + e.start">
+          <article class="rounded-2xl border p-4 hover:shadow transition">
+            <h3 class="font-semibold" x-text="e.school"></h3>
+            <p class="opacity-80" x-text="e.program"></p>
+            <p class="mt-1 text-sm opacity-70" x-text="formatDateRange(e.start, e.end)"></p>
+          </article>
+        </template>
       </div>
-      <div class="right-column">
-          <div class="header">
-            <h1>Mathis <span class="text-blue text-uppercase">Bureau</span></h1>
-            <p>C# .NET developer</p>
-            <ul class="infos">
-               <li><i class="icon fas fa-at text-blue"></i> <a href="mailto:mathisbureau@gmail.com">mathisbureau@gmail.com</a></li>
-               <li><i class="icon fas fa-phone text-blue"></i> <a href="tel:+33781535231">07 81 53 52 31</a></li>
-               <li><i class="icon fas fa-map-marker-alt text-blue"></i> 8 rue des carrières, 42270, Saint-Priest-En-Jarez</li>
-             </ul>
-          </div>
-          <div class="content">
-            <h2>Expériences <br><span class="text-blue">professionelles</span></h2>
-            <p>
-               <strong>2021 <i class="fas fa-long-arrow-alt-right"></i> 2023</strong>
-               <br>
-               <em>Développeur/Support niveau 1</em>, Objectif PDA
-           </p>
-           <p>
-            <strong>Juin 2019 -<i class="fas fa-long-arrow-alt-right"></i> Août 2019</strong>
-            <br>
-            <em>Préparateur de commande/caisse</em>, Le chalet du Pilat
-        </p>
-           <h2>Parcours <br><span class="text-blue">scolaire</span></h2>
-           <p>
-            <strong>2021 <i class="fas fa-long-arrow-alt-right"></i> 2023</strong>
-            <br>
-            <em>BTS Service Informatique aux Organisations 2em année</em>, CFAI Ardèche-Loire Saint-Etienne
-        </p>
-           <p>
-            <strong>2020 <i class="fas fa-long-arrow-alt-right"></i> 2021</strong>
-            <br>
-            <em>Parcours d'accès spécifique santé</em>, Faculté de médecine de Saint-Etienne
-            </p>
-            <p>
-               <strong>2019 <i class="fas fa-long-arrow-alt-right"></i> 2020</strong>
-               <br>
-               <em>Baccalauréat scientique option physique mention bien</em>, Lycée Saint-Denis Annonay
-           </p>
-           <p>
-            <strong>2015 <i class="fas fa-long-arrow-alt-right"></i> 2016</strong>
-            <br>
-            <em>Brevet des collèges mention très bien</em>, Collège Sacré-Coeur Annonay
-        </p>
-          </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projects" class="py-10 md:py-14 border-t border-slate-200/60 dark:border-slate-700/60">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="flex items-baseline justify-between gap-4 mb-6">
+        <h2 class="text-xl md:text-2xl font-bold">Projets</h2>
+        <a class="text-sm opacity-80 hover:opacity-100" :href="data.links.github" target="_blank" rel="noreferrer">Voir d'autres projets →</a>
       </div>
-  </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="projectsGrid">
+      </div>      
+    </div>
+  </section>
+
+  <!-- Langues & Centres d'intérêt -->
+  <section class="py-10 md:py-14 border-t border-slate-200/60 dark:border-slate-700/60">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-6">
+      <div>
+        <h2 class="text-xl md:text-2xl font-bold mb-4">Langues</h2>
+        <ul class="space-y-2">
+          <template x-for="l in data.languages" :key="l.name">
+            <li class="flex items-center justify-between rounded-xl border p-3">
+              <span class="font-medium" x-text="l.name"></span>
+              <span class="text-sm opacity-80" x-text="l.level"></span>
+            </li>
+          </template>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-xl md:text-2xl font-bold mb-4">Centres d'intérêt</h2>
+        <div class="flex flex-wrap gap-2" x-html="chips(data.interests)"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12 md:py-16 border-t border-slate-200/60 dark:border-slate-700/60 bg-slate-50 dark:bg-slate-800 print:bg-transparent">
+    <div class="mx-auto max-w-6xl px-4 text-center">
+      <h2 class="text-2xl md:text-3xl font-extrabold">On discute d'un projet ?</h2>
+      <p class="mt-2 opacity-80">Disponible pour des opportunités en C#/.NET et projets web.</p>
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+        <a :href="'mailto:'+data.email" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:shadow">Me contacter</a>
+        <a :href="data.links.linkedin" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:shadow">LinkedIn</a>
+        <a :href="data.links.github" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:shadow">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-sm opacity-70">
+    <p>© <span x-text="new Date().getFullYear()"></span> <span x-text="data.name"></span> — Construit avec <a href="#" class="underline">Tailwind</a> & Alpine.</p>
+  </footer>
+
+  <script>
+    function chips(list = []) {
+      return list.map(t => `<span class="inline-flex items-center rounded-full border px-3 py-1 text-sm">${t}</span>`).join("");
+    }
+    function formatDateRange(start, end) {
+      const fmt = (d) => `${d}`.replace(/\-/g, "/");
+      return `${fmt(start)} – ${end || 'Aujourd\'hui'}`;
+    }
+    function ui() {
+      return {
+        data: profileData,
+        toggleTheme() {
+          document.documentElement.classList.toggle('dark');
+          localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+        },
+        render() {
+          // Thème initial
+          const saved = localStorage.theme;
+          if (saved === 'dark') document.documentElement.classList.add('dark');
+          // Projets
+          const grid = document.getElementById('projectsGrid');
+          if (grid && this.data.projects?.length) {
+            grid.innerHTML = this.data.projects.map(p => `
+              <article class=\"rounded-2xl border p-4 hover:shadow transition flex flex-col\">
+                <h3 class=\"font-semibold text-lg\">${p.title}</h3>
+                <p class=\"mt-1 opacity-80 text-sm\">${p.description || ''}</p>
+                ${p.link ? `<a href=\"${p.link}\" target=\"_blank\" rel=\"noreferrer\" class=\"mt-auto inline-flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm hover:shadow\">Voir →</a>` : ''}
+              </article>
+            `).join('');
+          }
+        }
+      }
+    }
+  </script>
 </body>
 </html>
