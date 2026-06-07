@@ -10,7 +10,7 @@
     const profileData = {
       name: "Mathis Bureau",
       title: "Core Developer & Cyber Specialist | Secure-by-Design Expert",
-      location: "Saint-Priest-En-Jarez, FR",
+      location: "Saint-Etienne, FR",
       email: "mathisbureau@gmail.com",
       phone: "+33 7 81 53 52 31",
       links: {
@@ -18,17 +18,17 @@
         linkedin: "https://www.linkedin.com/in/mathis-bureau",
         resumePdf: "./Mathis_Bureau_CV.pdf"
       },
-      about: "Développeur passionné par la conception d’architectures logicielles performantes et sécurisées. Alliant une expertise technique .NET/Python à une culture 'Secure-by-Design', j'anticipe les vecteurs d'attaque dès la phase de conception. Spécialiste de la réponse sur incident et de l'analyse forensique, je fais le pont entre le développement haute performance et la cybersécurité opérationnelle.",
+      about: "Développeur passionné par la conception d’architectures logicielles performantes et sécurisées. Alliant une expertise technique .NET/Python à une culture 'Secure-by-Design', je fais le pont entre le développement haute performance et la cybersécurité opérationnelle.",
       languages: [
         { name: "Français", level: "Professionnel (Projet Voltaire)" },
         { name: "Anglais", level: "C1 (TOEIC 965)" },
         { name: "Espagnol", level: "Notions" }
       ],
-      interests: ["Cyber-Forensics", "Veille technologique", "Musique", "Sport"],
+      interests: ["Développement en tout genre (application lourde, web, jeux vidéos, tout ce que je peux coder...)", "Cyberdéfense et Forensics", "Veille technologique", "Musique", "E-Sport"],
       skills: {
-        backend: ["C# / .NET", "Python", "SQL Server", "Entity Framework", "API REST", "Défense en profondeur"],
+        backend: ["C# / .NET", "Python", "SQL Server / PGSQL / MongoDB Atlas", "Entity Framework", "API REST"],
         web: ["Angular", "TypeScript", "TailwindCSS", "PostgreSQL", "Architecture Web"],
-        cyber: ["Threat Modeling", "Autopsy", "Wireshark", "Volatility", "KAPE", "Linux", "Docker"]
+        cyber: ["Threat Modeling", "Autopsy", "Wireshark", "Volatility", "Linux", "Docker"]
       },
       experiences: [
         {
@@ -38,9 +38,10 @@
           end: "Aujourd'hui",
           location: "Saint-Étienne, France",
           achievements: [
-            "Conception d’applications web scalables avec Angular et .NET en appliquant le principe du 'Secure-by-Design'.",
-            "Implémentation de systèmes RAG (LLMOps) et automatisation de pipelines de données sécurisés avec LangChain.",
-            "Optimisation de bases de données et analyse de flux pour garantir la résilience des infrastructures."
+            "Développement de Logeproj : application web open-source .NET / Angular de gestion de projet suivi financier/suivi RH.",
+            "LLMOps -> développement d'un RAG, intégration de Mistral dans des process métiers (Fuzzy matching boosté IA).",
+            "Développement d'un Dashboard d'administration de l'infrastructure réseau avec une API Flask et un client Angular.",
+            "Pipelines CI/CD de génération de documentation automatique"
           ],
           tech: ["Angular", ".NET", "LangChain", "RAG", "PostgreSQL", "Threat Analysis"]
         },
@@ -53,7 +54,8 @@
           achievements: [
             "Développement d'interfaces robustes en WPF et services back-end .NET.",
             "Intégration d'interfaces sécurisées entre l'application et systèmes tiers (SOAP, XML).",
-            "Analyse et maintenance d'architectures critiques."
+            "Analyse et maintenance d'architectures critiques.",
+            "Installation et maintenance de machines de préparation de doses en pharmacies"
           ],
           tech: [".NET Framework", "WPF", "SQL Server", "XML/SOAP"]
         }
@@ -63,25 +65,30 @@
         { school: "Pôle Formation CFAI AFPI", program: "Licence CPLR, Informatique — Chef de projet", start: "2023-09", end: "2024-10" },
         { school: "CFAI Ardèche-Loire", program: "BTS SIO (Services Informatiques aux Organisations)", start: "2021", end: "2023" }
       ],
+      certifications: [
+        { title: "Certified Ethical Hacker (CEH)", issuer: "EC-Council", date: "2026" },
+        { title: "Cisco Certified Network Associate (CCNA 1-2)", issuer: "Cisco", date: "2024-2025" },
+        { title: "IBM z/OS Mainframe Practitioner", issuer: "IBM", date: "2026" }
+      ],
       projects: [
         {
           title: "Architecture RAG sécurisée",
           description: "Développement d'un système de recherche augmentée avec LangChain, PGVector et FastAPI, intégrant des mesures de sécurité pour la protection des données."
         },
         {
-          title: "API REST & Secure-by-Design",
-          description: "Implémentation d'une API de gestion documentaire avec authentification renforcée et chiffrement, en suivant les principes de défense en profondeur."
+          title: "Architecture RAG sécurisée",
+          description: "Développement d'un système de recherche augmentée avec LangChain, PGVector et FastAPI, intégrant des mesures de sécurité pour la protection des données."
         },
         {
           title: "Lab Forensique",
-          description: "Projets personnels d'analyse mémoire et système (Volatility/Autopsy) pour la détection d'intrusions."
+          description: "Projets personnels et d'études d'analyse mémoire et système (Volatility/Autopsy) pour la détection d'intrusions."
         }
       ]
     };
   </script>
 </head>
 <body x-data="ui()" x-init="render()" class="bg-white text-slate-800 antialiased dark:bg-slate-900 dark:text-slate-100">
-  <!-- ... (Le reste du code reste identique, le script ci-dessus mettra à jour automatiquement le contenu) ... -->
+
   <header class="sticky top-0 z-40 backdrop-blur border-b border-slate-200/60 dark:border-slate-700/60 bg-white/70 dark:bg-slate-900/50">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <a href="#top" class="font-semibold tracking-tight">Mathis Bureau</a>
@@ -90,11 +97,12 @@
         <a href="#skills" class="hover:opacity-100">Compétences</a>
         <a href="#experience" class="hover:opacity-100">Expériences</a>
         <a href="#education" class="hover:opacity-100">Formation</a>
+        <a href="#certifications" class="hover:opacity-100">Certifications</a>
         <a href="#projects" class="hover:opacity-100">Projets</a>
       </nav>
     </div>
   </header>
-  
+
   <section id="top" class="relative">
     <div class="mx-auto max-w-6xl px-4 pt-14 pb-10 grid md:grid-cols-[1.1fr,1fr] items-center gap-10">
       <div>
@@ -110,16 +118,16 @@
     </div>
   </section>
 
-  <section id="about" class="py-10 border-t border-slate-200/60">
+  <section id="about" class="py-10 border-t border-slate-200/60 dark:border-slate-700/60">
     <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-[1fr,2fr] gap-8">
-      <h2 class="text-xl font-bold">À propos</h2>
+      <h2 class="text-xl md:text-2xl font-bold">À propos</h2>
       <p class="leading-relaxed opacity-90" x-text="data.about"></p>
     </div>
   </section>
 
-  <section id="skills" class="py-10 border-t border-slate-200/60">
+  <section id="skills" class="py-10 border-t border-slate-200/60 dark:border-slate-700/60">
     <div class="mx-auto max-w-6xl px-4">
-      <h2 class="text-xl font-bold mb-6">Compétences techniques</h2>
+      <h2 class="text-xl md:text-2xl font-bold mb-6">Compétences techniques</h2>
       <div class="grid md:grid-cols-3 gap-6">
         <div>
           <h3 class="font-semibold mb-2 opacity-80">Back-end & Arch</h3>
@@ -137,14 +145,99 @@
     </div>
   </section>
 
-  <!-- Section Expériences et le reste conservent la même logique... -->
-  <!-- (Note : Tu peux conserver le code original pour les sections Experience, Education, Projets, etc.) -->
+  <section id="experience" class="py-10 border-t border-slate-200/60 dark:border-slate-700/60">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-xl md:text-2xl font-bold mb-6">Expériences professionnelles</h2>
+      <ol class="relative border-s border-slate-200 dark:border-slate-700">
+        <template x-for="exp in data.experiences" :key="exp.company + exp.start">
+          <li class="ms-6 py-6">
+            <span class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-sky-500 text-white text-xs">★</span>
+            <div class="flex flex-wrap items-baseline gap-3">
+              <h3 class="font-semibold" x-text="exp.role"></h3>
+              <span class="opacity-70" x-text="'— ' + exp.company"></span>
+              <span class="ms-auto text-sm opacity-70" x-text="formatDateRange(exp.start, exp.end)"></span>
+            </div>
+            <div class="mt-2 text-sm opacity-80" x-text="exp.location"></div>
+            <ul class="mt-3 list-disc ps-5 space-y-1">
+              <template x-for="a in exp.achievements" :key="a">
+                <li x-text="a"></li>
+              </template>
+            </ul>
+            <div class="mt-3 flex flex-wrap gap-2" x-html="chips(exp.tech)"></div>
+          </li>
+        </template>
+      </ol>
+    </div>
+  </section>
+
+  <section id="education" class="py-10 border-t border-slate-200/60 dark:border-slate-700/60">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-xl md:text-2xl font-bold mb-6">Parcours scolaire</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <template x-for="e in data.education" :key="e.school + e.start">
+          <article class="rounded-2xl border p-4 hover:shadow transition">
+            <h3 class="font-semibold" x-text="e.school"></h3>
+            <p class="opacity-80" x-text="e.program"></p>
+            <p class="mt-1 text-sm opacity-70" x-text="formatDateRange(e.start, e.end)"></p>
+          </article>
+        </template>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="py-10 border-t border-slate-200/60 dark:border-slate-700/60">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-xl md:text-2xl font-bold mb-6">Certifications</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <template x-for="c in data.certifications" :key="c.title">
+          <article class="rounded-2xl border p-4 hover:shadow transition">
+            <h3 class="font-semibold text-lg" x-text="c.title"></h3>
+            <div class="mt-2 flex justify-between items-center text-sm opacity-80">
+              <span x-text="c.issuer"></span>
+              <span x-text="c.date"></span>
+            </div>
+          </article>
+        </template>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-10 border-t border-slate-200/60 dark:border-slate-700/60">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-xl md:text-2xl font-bold mb-6">Projets</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="projectsGrid">
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-sm opacity-70 border-t">
+    <p>© <span x-text="new Date().getFullYear()"></span> <span x-text="data.name"></span></p>
+  </footer>
 
   <script>
     function chips(list = []) {
       return list.map(t => `<span class="inline-flex items-center rounded-full border px-3 py-1 text-sm bg-slate-50 dark:bg-slate-800">${t}</span>`).join("");
     }
-    // ... (Reste des fonctions UI)
+    function formatDateRange(start, end) {
+      const fmt = (d) => `${d}`.replace(/-/g, "/");
+      return `${fmt(start)} – ${end || 'Aujourd\'hui'}`;
+    }
+    function ui() {
+      return {
+        data: profileData,
+        render() {
+          const grid = document.getElementById('projectsGrid');
+          if (grid && this.data.projects?.length) {
+            grid.innerHTML = this.data.projects.map(p => `
+              <article class="rounded-2xl border p-4 hover:shadow transition flex flex-col">
+                <h3 class="font-semibold text-lg">${p.title}</h3>
+                <p class="mt-1 opacity-80 text-sm">${p.description || ''}</p>
+              </article>
+            `).join('');
+          }
+        }
+      }
+    }
   </script>
 </body>
 </html>
